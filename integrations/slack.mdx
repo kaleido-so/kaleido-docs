@@ -1,0 +1,35 @@
+---
+title: 'Slack'
+description: 'Send messages from Slack to your Kaleido workspace'
+icon: 'slack'
+---
+
+## Slack + Kaleido
+
+You need to be an admin of your Slack workspace:
+
+1. Go to the [Slack apps catalogue](https://api.slack.com/apps) and click the "Create New App" button. Choose the "From Scratch" option, and name your app "Kaleido".
+2. Navigate to the "Interactivity & Shortcuts" tab and enable Interactivity. 
+Paste the following Request URL: https://app.kaleido.so/slack/events
+
+Click the "Create New Shortcut" button, select "On Message", and fill in the fields as follows:
+
+- Name: Send to Kaleido
+- Short Description: Send to Kaleido
+- Callback ID: feedback-kaleido
+ 
+3. Navigate to the "OAuth & Permissions" tab, scroll down to the "Scopes" section, and add the "chat:write" scope to both the Bot Token Scope and User Token Scope.
+4. Scroll to the top, click the "Install to Workspace" button, and then click "Allow".
+5. Go to your Slack workspace, select the chat where you want to send feedback to Kaleido from, and click on the channel's name at the top of the window.
+6. Go to the "Integrations" tab, click "Add an App", and choose "Kaleido".
+7. Send the message "KaleidoConnect Token" (use your token from the Kaleido interface) to the channel.
+
+<Frame>
+  <img src="/images/slack/slack-token.jpg" />
+</Frame>
+
+8. Hover over the message, click the "More actions" button (three dots), and then click the "Send to Kaleido" button.
+9. Your Slack integration with Kaleido is now active.
+
+
+

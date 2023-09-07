@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Kaleido.so",
   "logo": {
-    "dark": "/logo/dark2.svg",
-    "light": "/logo/light2.svg"
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
   },
   "favicon": "/favicon.png",
   "colors": {
@@ -35,12 +35,20 @@
       "pages": ["introduction", "quickstart"]
     },
     {
-      "group": "Learn2",
+      "group": "Learn",
       "pages": [
         "learn/insights",
         "learn/reports",
         "learn/timelines",
-        "learn/sorces"
+        "learn/sources"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": [
+        "integrations/telegram",
+        "integrations/slack",
+        "integrations/csv"
       ]
     }
   ],
